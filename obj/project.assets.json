@@ -1559,11 +1559,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\esoft\\project\\KickBlastJudoManager\\KickBlastJudoManager.csproj",
+      "projectUniqueName": "E:\\githubNew\\KickBlastJudoManager\\KickBlastJudoManager.csproj",
       "projectName": "KickBlastJudoManager",
-      "projectPath": "E:\\esoft\\project\\KickBlastJudoManager\\KickBlastJudoManager.csproj",
+      "projectPath": "E:\\githubNew\\KickBlastJudoManager\\KickBlastJudoManager.csproj",
       "packagesPath": "C:\\Users\\Savindu\\.nuget\\packages\\",
-      "outputPath": "E:\\esoft\\project\\KickBlastJudoManager\\obj\\",
+      "outputPath": "E:\\githubNew\\KickBlastJudoManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Savindu\\AppData\\Roaming\\NuGet\\NuGet.Config"

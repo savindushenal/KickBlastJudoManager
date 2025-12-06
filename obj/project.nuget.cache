@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qub5ilz2I1eeZFm7eslrlgZsmq/OL4yO0x8CqNZGp/Agsq3OGK4mHlCfkJtoR9xPxaBZiSxoPVMp/CWM98QJoA==",
+  "dgSpecHash": "wCIMwpbUFMwf+tzNyi6IyeOARA5XupFIVDvS8Q+GhbSzPxb8BwGsT6Qp9yiwmj94GOykqrtDfdxzecEubyyAow==",
   "success": true,
-  "projectFilePath": "E:\\esoft\\project\\KickBlastJudoManager\\KickBlastJudoManager.csproj",
+  "projectFilePath": "E:\\githubNew\\KickBlastJudoManager\\KickBlastJudoManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Savindu\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Savindu\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
