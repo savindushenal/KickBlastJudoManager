@@ -1,0 +1,111 @@
+<Window x:Class="KickBlastJudoManager.Dialogs.AthleteDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Athlete" 
+        Height="550" 
+        Width="500"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#F5F5F5">
+
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,10,0,5"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Padding" Value="8"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Athlete Name -->
+        <Label Grid.Row="0" Content="Athlete Name *" FontWeight="SemiBold"/>
+        <TextBox Grid.Row="0" x:Name="txtAthleteName" Margin="0,40,0,0" Height="40"/>
+
+        <!-- Training Plan -->
+        <Label Grid.Row="1" Content="Training Plan *" FontWeight="SemiBold"/>
+        <ComboBox Grid.Row="1" x:Name="cmbTrainingPlan" Margin="0,40,0,0" Height="40" DisplayMemberPath="Name"/>
+
+        <!-- Current Weight -->
+        <Label Grid.Row="2" Content="Current Weight (kg) *" FontWeight="SemiBold"/>
+        <TextBox Grid.Row="2" x:Name="txtCurrentWeight" Margin="0,40,0,0" Height="40"/>
+
+        <!-- Weight Category -->
+        <Label Grid.Row="3" Content="Weight Category *" FontWeight="SemiBold"/>
+        <ComboBox Grid.Row="3" x:Name="cmbWeightCategory" Margin="0,40,0,0" Height="40" DisplayMemberPath="Name"/>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button x:Name="btnCancel" Content="Cancel" Width="100" Height="40" Margin="0,0,10,0" 
+                    Foreground="White" FontSize="14" BorderThickness="0" 
+                    Cursor="Hand" Click="Cancel_Click">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#6C757D"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" CornerRadius="4">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                                        TextBlock.Foreground="{TemplateBinding Foreground}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#5A6268"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="btnSave" Content="Save" Width="100" Height="40" 
+                    Foreground="White" FontSize="14" FontWeight="SemiBold" BorderThickness="0" 
+                    Cursor="Hand" Click="Save_Click">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#28A745"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}" CornerRadius="4">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                        TextBlock.Foreground="{TemplateBinding Foreground}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#218838"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
